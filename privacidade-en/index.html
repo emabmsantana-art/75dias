@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — 75 Dias</title>
+<style>
+  :root {
+    --ink: #1c1a17;
+    --ink2: #55504a;
+    --ink3: #8a837b;
+    --bg: #faf8f5;
+    --line: #e5e0d8;
+    --accent: #8a6a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#f2efe9; --ink2:#c3bcb2; --ink3:#8a837b; --bg:#141311; --line:#2b2825; --accent:#c9a17a; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .35rem; }
+  h2 { font-size: 1.15rem; letter-spacing: -0.01em; margin: 2.75rem 0 .6rem; }
+  h3 { font-size: 1rem; margin: 1.75rem 0 .4rem; }
+  p, li { color: var(--ink2); }
+  .lead { font-size: 1.1rem; color: var(--ink); }
+  .meta { color: var(--ink3); font-size: .9rem; margin: 0 0 2.5rem; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .35rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .95rem; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink); font-weight: 600; }
+  td { color: var(--ink2); }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3.5rem 0; }
+  .box { border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.15rem; margin: 1.5rem 0; }
+  .box p:last-child { margin-bottom: 0; }
+  footer { color: var(--ink3); font-size: .9rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy policy</h1>
+<p class="meta">75 Dias · updated 24 August 2026<br><a href="../privacidade/">Português</a> · <strong>English</strong> · <a href="../privacidade-es/">Español</a></p>
+
+<p class="lead">75 Dias was built to work without a server. Your photos, your weight, your measurements, your journal and your meal plan stay on your phone and are not sent anywhere.</p>
+
+<p>This policy explains the only three exceptions, what each one sends, and how to turn them off.</p>
+
+<h2>What stays on your phone</h2>
+
+<p>All of this is stored only on your device, in the app's private area, and is included in your iPhone's own iCloud backup — which belongs to Apple and to you, not to us:</p>
+
+<ul>
+  <li>your progress photos and every other photo you take in the app</li>
+  <li>your weight, body measurements and daily history</li>
+  <li>your journal, notes and answers to the daily questions</li>
+  <li>your workouts, including any imported from Apple Health</li>
+  <li>your saved meal plan, meals and shopping list</li>
+  <li>your name, if you enter one, and the app's settings</li>
+</ul>
+
+<p>There are no user accounts, no sign-up and no password, and we cannot see any of it. Deleting the app deletes this data with it.</p>
+
+<h2>What leaves your phone</h2>
+
+<p>Three things, and none of them carries your name or anything that identifies you:</p>
+
+<table>
+  <tr><th>What</th><th>Where to</th><th>When</th></tr>
+  <tr>
+    <td>The <strong>text</strong> of your meal plan</td>
+    <td>A server of ours (Cloudflare), which passes it to Anthropic</td>
+    <td>Only if you use "Read online", and only after you say yes</td>
+  </tr>
+  <tr>
+    <td>A product <strong>barcode</strong></td>
+    <td>Open Food Facts</td>
+    <td>Only when you scan a barcode</td>
+  </tr>
+  <tr>
+    <td><strong>Purchase data</strong></td>
+    <td>RevenueCat and Apple</td>
+    <td>Only if you subscribe</td>
+  </tr>
+</table>
+
+<h3>1. Reading your plan online</h3>
+
+<p>You can write or paste your meal plan and ask the app to read it for you. When you do, the <em>text</em> of the plan — or the text read from a photo or PDF — is sent to a server of ours, which passes it to <a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic</a> to be interpreted, and returns the meals already structured.</p>
+
+<div class="box">
+  <p><strong>The app asks you before the first time</strong> and explains this. If you say no, nothing is sent — and the app can still read your plan with no connection at all, using the "Read here" button. Your answer is saved and you can change it in Settings.</p>
+</div>
+
+<p>What is sent is only the plan text: foods and amounts. Your name, your weight, your photos and any identifier of yours are not included. Neither we nor Anthropic keep that text to train models.</p>
+
+<h3>2. Barcodes</h3>
+
+<p>If you scan a product barcode, the code is sent to the public <a href="https://world.openfoodfacts.org/" rel="noopener">Open Food Facts</a> database to fetch nutrition values. It is a product code — it says nothing about you.</p>
+
+<h3>3. Subscription</h3>
+
+<p>Purchases are handled by Apple and managed through <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>, which creates an anonymous identifier per installation so it knows the subscription is valid. We never receive your name or your payment details — Apple does not give them to us.</p>
+
+<h2>Permissions the app asks for</h2>
+
+<table>
+  <tr><th>Permission</th><th>What for</th></tr>
+  <tr><td>Camera</td><td>Taking the daily photo and scanning barcodes. Photos stay on the phone.</td></tr>
+  <tr><td>Photos</td><td>Picking a photo you already took, and saving a copy of your photos to the "75 Dias" album in your camera roll.</td></tr>
+  <tr><td>Notifications</td><td>The reminders you choose. You can decline, and the app still works.</td></tr>
+  <tr><td>Apple Health</td><td>Reading your workouts, if you want to import them. They are only read, they stay on the phone, and they are never sent anywhere. The app writes nothing to Health.</td></tr>
+</table>
+
+<p>All are optional and requested at the moment they are needed — never on launch. You can decline or withdraw any of them in your iPhone's Settings.</p>
+
+<h2>What the app does not do</h2>
+
+<ul>
+  <li>No advertising and no ad SDKs.</li>
+  <li>No analytics, no usage statistics, no tracking.</li>
+  <li>It does not follow you across other apps or websites, and it does not show Apple's tracking prompt because it has nothing to track.</li>
+  <li>It does not sell or share your data. There is nothing to sell: we do not have it.</li>
+  <li>It does not compare your results with other people and has no leaderboards.</li>
+</ul>
+
+<h2>Your data is yours</h2>
+
+<ul>
+  <li><strong>Export:</strong> in Settings you can export everything — the app state as JSON and your photos, in a ZIP file you can keep wherever you like.</li>
+  <li><strong>Delete:</strong> deleting the app deletes everything on the phone. In Settings you can also delete photos by type, or restart the challenge.</li>
+  <li><strong>Ask us:</strong> because we keep nothing of our own about you, we have no data of yours to hand over or delete on request. If you have questions, write to us.</li>
+</ul>
+
+<h2>Children</h2>
+
+<p>The app is not directed at children under 13 and does not knowingly collect data from children.</p>
+
+<h2>Changes</h2>
+
+<p>If any of this changes — for example, if the app one day gains accounts or sync between devices — this page is updated with the new date, and the app tells you before any new data is sent.</p>
+
+<h2>Contact</h2>
+
+<p>Privacy questions: <a href="mailto:emabmsantana@gmail.com">emabmsantana@gmail.com</a></p>
+
+<hr>
+
+<footer>
+  <p>75 Dias — an app for the 75-day challenge. This policy applies to the iPhone application.</p>
+  <p>Need help? Go to <a href="../suporte-en/">support</a>.</p>
+</footer>
+</main>
+</body>
+</html>

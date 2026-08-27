@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — 75 Dias</title>
+<style>
+  :root {
+    --ink: #1c1a17;
+    --ink2: #55504a;
+    --ink3: #8a837b;
+    --bg: #faf8f5;
+    --line: #e5e0d8;
+    --accent: #8a6a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#f2efe9; --ink2:#c3bcb2; --ink3:#8a837b; --bg:#141311; --line:#2b2825; --accent:#c9a17a; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 .35rem; }
+  h2 { font-size: 1.15rem; letter-spacing: -0.01em; margin: 2.75rem 0 .6rem; }
+  h3 { font-size: 1rem; margin: 1.75rem 0 .4rem; }
+  p, li { color: var(--ink2); }
+  .lead { font-size: 1.1rem; color: var(--ink); }
+  .meta { color: var(--ink3); font-size: .9rem; margin: 0 0 2.5rem; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .35rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .95rem; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink); font-weight: 600; }
+  td { color: var(--ink2); }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3.5rem 0; }
+  .box { border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.15rem; margin: 1.5rem 0; }
+  .box p:last-child { margin-bottom: 0; }
+  footer { color: var(--ink3); font-size: .9rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de privacidad</h1>
+<p class="meta">75 Dias · actualizada el 24 de agosto de 2026<br><a href="../privacidade/">Português</a> · <a href="../privacidade-en/">English</a> · <strong>Español</strong></p>
+
+<p class="lead">75 Dias se hizo para funcionar sin servidor. Tus fotos, tu peso, tus medidas, tu diario y tu plan de comidas se quedan en tu teléfono y no se envían a ninguna parte.</p>
+
+<p>Esta política explica las tres únicas excepciones, qué envía cada una y cómo desactivarlas.</p>
+
+<h2>Lo que se queda en tu teléfono</h2>
+
+<p>Todo esto se guarda solo en tu dispositivo, en el área privada de la app, y entra en la copia de seguridad de iCloud del propio iPhone — que es de Apple y tuya, no nuestra:</p>
+
+<ul>
+  <li>las fotos de progreso y todas las demás fotos que hagas en la app</li>
+  <li>el peso, las medidas corporales y el historial de los días</li>
+  <li>el diario, las notas y las respuestas a las preguntas</li>
+  <li>los entrenamientos, incluidos los que importes de Salud de Apple</li>
+  <li>el plan de comidas guardado, las comidas y la lista de la compra</li>
+  <li>tu nombre, si lo escribes, y los ajustes de la app</li>
+</ul>
+
+<p>No hay cuentas de usuario, ni registro, ni contraseña, y no podemos ver nada de esto. Si borras la app, borras estos datos contigo.</p>
+
+<h2>Lo que sale del teléfono</h2>
+
+<p>Tres cosas, y ninguna lleva tu nombre ni nada que te identifique:</p>
+
+<table>
+  <tr><th>Qué</th><th>Adónde</th><th>Cuándo</th></tr>
+  <tr>
+    <td>El <strong>texto</strong> de tu plan de comidas</td>
+    <td>Un servidor nuestro (Cloudflare), que lo entrega a Anthropic</td>
+    <td>Solo si usas "Leer en línea", y solo después de que digas que sí</td>
+  </tr>
+  <tr>
+    <td>El <strong>código de barras</strong> de un producto</td>
+    <td>Open Food Facts</td>
+    <td>Solo cuando escaneas un código</td>
+  </tr>
+  <tr>
+    <td>Los <strong>datos de la compra</strong></td>
+    <td>RevenueCat y Apple</td>
+    <td>Solo si te suscribes</td>
+  </tr>
+</table>
+
+<h3>1. Leer el plan en línea</h3>
+
+<p>Puedes escribir o pegar tu plan de comidas y pedirle a la app que lo lea por ti. Cuando lo haces, el <em>texto</em> del plan — o el texto leído de una foto o un PDF — se envía a un servidor nuestro, que lo entrega a <a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic</a> para interpretarlo, y devuelve las comidas ya organizadas.</p>
+
+<div class="box">
+  <p><strong>La app te pregunta antes de la primera vez</strong> y te lo explica. Si dices que no, no se envía nada — y la app puede seguir leyendo tu plan sin conexión alguna, con el botón "Leer aquí". Tu respuesta queda guardada y puedes cambiarla en los Ajustes.</p>
+</div>
+
+<p>Lo que se envía es solo el texto del plan: alimentos y cantidades. No van tu nombre, tu peso, tus fotos ni ningún identificador tuyo. Ni nosotros ni Anthropic guardamos ese texto para entrenar modelos.</p>
+
+<h3>2. Códigos de barras</h3>
+
+<p>Si escaneas el código de barras de un producto, el código se envía a la base de datos pública <a href="https://world.openfoodfacts.org/" rel="noopener">Open Food Facts</a> para obtener los valores nutricionales. Es un código de producto — no dice nada sobre ti.</p>
+
+<h3>3. Suscripción</h3>
+
+<p>Las compras las gestiona Apple a través de <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>, que crea un identificador anónimo por instalación para saber que la suscripción es válida. No recibimos tu nombre ni tus datos de pago — Apple no nos los da.</p>
+
+<h2>Permisos que pide la app</h2>
+
+<table>
+  <tr><th>Permiso</th><th>Para qué</th></tr>
+  <tr><td>Cámara</td><td>Hacer la foto del día y leer códigos de barras. Las fotos se quedan en el teléfono.</td></tr>
+  <tr><td>Fotos</td><td>Elegir una foto ya hecha y guardar una copia de tus fotos en el álbum "75 Dias" de tu carrete.</td></tr>
+  <tr><td>Notificaciones</td><td>Los recordatorios que tú elijas. Puedes no darlo, y la app funciona igual.</td></tr>
+  <tr><td>Salud de Apple</td><td>Leer tus entrenamientos, si quieres importarlos. Solo se leen, se quedan en el teléfono y nunca se envían. La app no escribe nada en Salud.</td></tr>
+</table>
+
+<p>Todos son opcionales y se piden en el momento en que hacen falta — nunca al abrir la app. Puedes rechazarlos o retirarlos en los Ajustes del iPhone.</p>
+
+<h2>Lo que la app no hace</h2>
+
+<ul>
+  <li>No tiene publicidad ni ningún SDK de anuncios.</li>
+  <li>No tiene analítica, ni estadísticas de uso, ni rastreo.</li>
+  <li>No te sigue por otras apps o sitios web, y no pide el permiso de rastreo de Apple porque no tiene nada que rastrear.</li>
+  <li>No vende ni comparte tus datos. No hay nada que vender: no los tenemos.</li>
+  <li>No compara tus resultados con los de otras personas y no tiene clasificaciones.</li>
+</ul>
+
+<h2>Tus datos son tuyos</h2>
+
+<ul>
+  <li><strong>Exportar:</strong> en los Ajustes puedes exportarlo todo — el estado de la app en JSON y tus fotos, en un archivo ZIP que puedes guardar donde quieras.</li>
+  <li><strong>Borrar:</strong> borrar la app borra todo lo que está en el teléfono. En los Ajustes también puedes borrar fotos por tipo, o reiniciar el reto.</li>
+  <li><strong>Pedírnoslo:</strong> como no guardamos nada nuestro sobre ti, no tenemos datos tuyos que entregarte o borrar a petición. Si tienes dudas, escríbenos.</li>
+</ul>
+
+<h2>Menores</h2>
+
+<p>La app no se dirige a menores de 13 años y no recoge conscientemente datos de menores.</p>
+
+<h2>Cambios</h2>
+
+<p>Si esto cambia — por ejemplo, si algún día la app tiene cuentas o sincronización entre dispositivos — esta página se actualiza con la fecha nueva y la app te avisa antes de cualquier envío nuevo de datos.</p>
+
+<h2>Contacto</h2>
+
+<p>Dudas sobre privacidad: <a href="mailto:emabmsantana@gmail.com">emabmsantana@gmail.com</a></p>
+
+<hr>
+
+<footer>
+  <p>75 Dias — una app para el reto de 75 días. Esta política se aplica a la aplicación para iPhone.</p>
+  <p>¿Necesitas ayuda? Ve a <a href="../suporte-es/">ayuda</a>.</p>
+</footer>
+</main>
+</body>
+</html>
